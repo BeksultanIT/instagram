@@ -1,6 +1,6 @@
 <div class="post bg-white border rounded col-12 col-md-6 mb-4">
     <div class="post-header py-3 px-4 d-flex align-items-center">
-        <img class="post-avatar rounded-circle me-3" src="{{ post.author.avatar.url }}" alt="User Avatar">
+        <img class="post-avatar rounded-circle me-3" src="{{ post.author.avatars.url }}" alt="User Avatar">
         <span class="post-username font-weight-bold"><a href="{% url 'accounts:profile' post.author.pk %}">
                         {{ post.author.username }}</a>
                     </span>

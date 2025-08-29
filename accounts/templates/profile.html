@@ -6,7 +6,7 @@
 
 {% block content %}
     <div class="profile-header">
-        <img class="profile-avatar img-fluid" src="{{ user_obj.avatar.url }}" alt="User Avatar">
+        <img class="profile-avatar img-fluid" src="{{ user_obj.avatars.url }}" alt="User Avatar">
         <div class="profile-username">{{ user_obj.username }}</div>
         <div class="profile-bio">{{ user_obj.description }}</div>
         <div class="profile-stats">

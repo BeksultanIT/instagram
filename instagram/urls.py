@@ -19,6 +19,10 @@ from django.contrib import admin
 from django.urls import path, include
 from instagram import settings
 
+api_urls = [
+    path('', include('api_v1.urls')),
+]
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("webapp.urls")),
