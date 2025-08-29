@@ -1,0 +1,95 @@
+[
+{
+  "model": "webapp.post",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-08-29T08:04:14.905Z",
+    "updated_at": "2025-08-29T10:40:09.249Z",
+    "image": "posts/smiling-cat-for-web.jpg",
+    "content": "test test test test",
+    "author": 1,
+    "like_users": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-08-29T08:05:46.441Z",
+    "updated_at": "2025-08-29T10:39:37.975Z",
+    "image": "posts/happy-cats-doing-squishy-face-6750651e697e4__605.jpg",
+    "content": "Test",
+    "author": 1,
+    "like_users": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-08-29T08:36:46.214Z",
+    "updated_at": "2025-08-29T10:17:07.747Z",
+    "image": "posts/buket-iz-gortenzij-obyatiya-chuvstv-285x285.jpg",
+    "content": "test test test tes test",
+    "author": 2,
+    "like_users": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-08-29T08:38:58.511Z",
+    "updated_at": "2025-08-29T08:38:58.511Z",
+    "image": "posts/1677456625_bogatyr-club-p-avatarki-na-chernom-fone-foni-4.jpg",
+    "content": "tekstt",
+    "author": 3,
+    "like_users": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-08-29T10:42:10.753Z",
+    "updated_at": "2025-08-29T10:42:10.753Z",
+    "image": "posts/flowers.jpeg",
+    "content": "цветочки",
+    "author": 2,
+    "like_users": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-08-29T10:42:56.383Z",
+    "updated_at": "2025-08-29T10:42:56.383Z",
+    "image": "posts/flowerss.jpeg",
+    "content": "гартензия",
+    "author": 3,
+    "like_users": [
+      3
+    ]
+  }
+}
+]
