@@ -8,16 +8,19 @@
     <img class="post-image img-fluid" src="{{ post.image.url }}" alt="Post Image">
     <div class="post-actions py-2 px-4">
         {% if request.user.is_authenticated %}
-            <a href="{% url 'webapp:post_like' post.pk %}?next={{ request.path }}">
-                {% if request.user not in post.like_users.all %}
-                    <span class="post-like-btn me-2"><i class="bi bi-heart"></i></span>
-                {% else %}
-                    <span class="post-like-btn me-2"><i class="bi bi-heart-fill"></i></span>
-                {% endif %}
+            <button type="button"
+                    class="post-like-btn me-2 btn btn-link p-0"
+                    data-post-id="{{ post.pk }}"
+                    data-liked="{% if request.user in post.like_users.all %}true{% else %}false{% endif %}">
+                <i class="bi {% if request.user in post.like_users.all %}bi-heart-fill{% else %}bi-heart{% endif %}"></i>
+            </button>
+        {% else %}
+            <a class="post-like-btn me-2 btn btn-link p-0" href="{% url 'accounts:login' %}?next={{ request.path }}">
+                <i class="bi bi-heart"></i>
             </a>
         {% endif %}
-        <span class="post-likes font-weight-bold">{{ post.like_users.count }}</span>
-{#        <span class="post-comment-btn me-2"><i class="bi bi-chat-dots-fill"></i></span>#}
+        <span class="post-likes font-weight-bold" data-post-id="{{ post.pk }}">{{ post.like_users.count }}</span>
+
     </div>
     <div class="post-description px-4 py-3">
         <p>{{ post.content }}</p>

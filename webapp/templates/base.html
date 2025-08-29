@@ -56,6 +56,7 @@
         </div>
     </div>
 </nav>
+<form id="csrf-form" style="display:none">{% csrf_token %}</form>
 
 <div class="container">
     {% block content %}
@@ -67,5 +68,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+{% load static %}
+<script src="{% static 'js/likes.js' %}"></script>
 </body>
 </html>
